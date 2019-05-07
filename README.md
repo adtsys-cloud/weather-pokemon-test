@@ -169,4 +169,4 @@ A plataforma PokéAPI não exige token de autenticação o que torna sua utiliza
 - Uma breve documentação com os passos para executar a aplicação deve ser elaborada; **(requisito obrigatório)**
 - Na documentação deve constar as tecnologias utilizadas; **(requisito obrigatório)**
 - Qualquer coisa adicionada como extra por parte do desenvolvedor, por exemplo exibir a imagem do pokémon na tela, será contabilizada como ponto extra, desde que os outros requisitos estejam 100% funcionais; **(não é um requisito obrigatório)**
-- Todo o código deve ser adicionado no em seu Github pessoal, além da documentação no formato markdown facilmente aceito pelo github. (requisito obrigatório)
+- Todo o código deve ser adicionado no em seu Github pessoal, além da documentação no formato markdown facilmente aceito pelo github. **(requisito obrigatório)**
