@@ -41,24 +41,24 @@ O objetivo é criar uma aplicação web seguindo os seguintes critérios:
 
 - Acesse o link da plataforma em https://openweathermap.org/;
 - No topo da página procure e clique no botão de “Sign UP”;
-- Entre com as suas credenciais e crie um novo acesso, para que possa gerar um <APPID>, na plataforma;
+- Entre com as suas credenciais e crie um novo acesso, para que possa gerar um `APPID`, na plataforma;
 - Quando estiver logado, procure e clique no botão “API Keys”;
 - Ao ser direcionado para a próxima página visualize um pequeno formulário chamado “Create Key”;
 - No input “Name”, coloque o nome que achar mais conveniente, por exemplo: “Default”;
 - Em seguida clique no botão “Generate”;
-- Ao lado do formulário uma “Key” (chave), será gerada com o nome que você informou no passo anterior, essa chave é o que a plataforma chama de <APPID> e será utilizada ao realizarmos as requisições Rest para as API(s) da plataforma.
+- Ao lado do formulário uma “Key” (chave), será gerada com o nome que você informou no passo anterior, essa chave é o que a plataforma chama de `APPID` e será utilizada ao realizarmos as requisições Rest para as API(s) da plataforma.
 
 ### Passo 2 - API do OpenWeatherMap
 
-- Estando logado no plataforma procure pelo botão “API” no menu principal da aplicação, ou simplesmente acesse https://openweathermap.org/api;
-- Na página de API procure pelo título “Current weather data”, e clique no botão “API Doc”, logo abaixo do título;
-- Após o redirecionamento, você terá diversas informações sobre o que está API, pode fazer, resumidamente iremos utilizá-la para informar o nome da cidade que deseja ver as condições climáticas da região;
-- Para isso deve ser utilizada a API chamada “By city name”.
+- Estando logado na plataforma procure pelo botão “API” no menu principal da aplicação, ou simplesmente acesse https://openweathermap.org/api;
+- Na página de API procure pelo título **“Current weather data”**, e clique no botão **“API Doc”**, logo abaixo do título;
+- Após o redirecionamento, você terá diversas informações sobre o que a API pode fazer, resumidamente iremos utilizá-la para informar o nome da cidade que deseja ver as condições climáticas da região;
+- Para isso deve ser utilizada a API chamada **“By city name”**.
   - Ex.: https://api.openweathermap.org/data/2.5/weather?q=NOME_DA_CIDADE&appid=APPID
   - ou https://api.openweathermap.org/data/2.5/weather?q=Campinas&appid=5445a9ae08df1a3117ae57894fa7cdadah
   - Substituindo o conteúdo **NOME_DA_CIDADE** e **APP_ID**, com o nome da cidade que deseja saber o clima e o token gerado no passo 1;
 - O resultado dessa requisição será um objeto do tipo JSON, atualmente o mais utilizado para aplicações RESTful;
-  - Apenas dois atributos são de importância para o desafio o primeiro é o atributo chamado “weather”, que irá dar informação caso esteja chovendo na região, e o atributo “main”, que contém a temperatura da cidade em questão.
+  - Apenas dois atributos são de importância para o desafio o primeiro é o atributo chamado **“weather”**, que irá dar informação caso esteja chovendo na região, e o atributo **“main”**, que contém a temperatura da cidade em questão.
 
 ```
 {
@@ -110,8 +110,8 @@ O objetivo é criar uma aplicação web seguindo os seguintes critérios:
 A plataforma PokéAPI não exige token de autenticação o que torna sua utilização bem mais simples, então acesse o link https://pokeapi.co/
 
 - Logo na página inicial é possível testar a API, basta seguir os exemplos clicando nos links abaixo do input de submit, por exemplo **“/type/3/”**;
-- A API que nos interesse nesse caso é exatamente a de tipo, porém ao invés de passar um valor numérico iremos passar o nome do tipo como parâmetro, como pode ser visto na documentação: https://pokeapi.co/docs/v2.html/#types
-- Para isso pode-se fazer a seguinte requisição como exemplo:
+- A API que nos interessa nesse caso é exatamente a de tipo, porém ao invés de passar um valor numérico iremos passar o nome do tipo como parâmetro, como pode ser visto na documentação: https://pokeapi.co/docs/v2.html/#types
+- Para isso pode-se fazer a seguinte requisição como no exemplo:
   - https://pokeapi.co/api/v2/type/<NOME_DO_TIPO>
   - ou
   - https://pokeapi.co/api/v2/type/electric
@@ -170,3 +170,16 @@ A plataforma PokéAPI não exige token de autenticação o que torna sua utiliza
 - Na documentação deve constar as tecnologias utilizadas; **(requisito obrigatório)**
 - Qualquer coisa adicionada como extra por parte do desenvolvedor, por exemplo exibir a imagem do pokémon na tela, será contabilizada como ponto extra, desde que os outros requisitos estejam 100% funcionais; **(não é um requisito obrigatório)**
 - Todo o código deve ser adicionado no em seu Github pessoal, além da documentação no formato markdown facilmente aceito pelo github. **(requisito obrigatório)**
+
+
+## Dicas
+
+```
+Recomendamos o uso de uma ferramenta chamada postman para realizar o testes com as API(s) (https://www.getpostman.com/);
+
+Lembre-se que um dos critérios da aplicação é o uso da temperatura em graus Celsius, caso faça a request de clima no formato original, o resultado dos atributos de temperatura estarão em Fahrenheit, então verifique como alterar para Celsius utilizando o parâmetro units na requisição.
+
+Fique atento as pegadinhas. 8ˆP
+
+Para qualquer desenvolvedor independente de seu conhecimento técnico saber entender a documentação das ferramentas, plataformas, frameworks, etc, é um requisito básico, então sempre dê uma passadinha na área de documentação, mesmo que já tenha utilizado determinada ferramenta, as coisas sempre podem mudar e novas podem surgir.
+```
