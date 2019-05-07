@@ -174,12 +174,11 @@ A plataforma PokéAPI não exige token de autenticação o que torna sua utiliza
 
 ## Dicas
 
-```
-Recomendamos o uso de uma ferramenta chamada postman para realizar o testes com as API(s) (https://www.getpostman.com/);
+> Recomendamos o uso de uma ferramenta chamada postman para realizar o testes com as API(s) (https://www.getpostman.com/);
 
-Lembre-se que um dos critérios da aplicação é o uso da temperatura em graus Celsius, caso faça a request de clima no formato original, o resultado dos atributos de temperatura estarão em Fahrenheit, então verifique como alterar para Celsius utilizando o parâmetro units na requisição.
+> Lembre-se que um dos critérios da aplicação é o uso da temperatura em graus Celsius, caso faça a request de clima no formato original, o resultado dos atributos de temperatura estarão em Fahrenheit, então verifique como alterar para Celsius utilizando o parâmetro units na requisição.
 
-Fique atento as pegadinhas. 8ˆP
+> Fique atento as pegadinhas. 8ˆP
 
-Para qualquer desenvolvedor independente de seu conhecimento técnico saber entender a documentação das ferramentas, plataformas, frameworks, etc, é um requisito básico, então sempre dê uma passadinha na área de documentação, mesmo que já tenha utilizado determinada ferramenta, as coisas sempre podem mudar e novas podem surgir.
-```
+> Para qualquer desenvolvedor independente de seu conhecimento técnico saber entender a documentação das ferramentas, plataformas, frameworks, etc, é um requisito básico, então sempre dê uma passadinha na área de documentação, mesmo que já tenha utilizado determinada ferramenta, as coisas sempre podem mudar e novas podem surgir.
+
