@@ -17,6 +17,7 @@ app.post('/search', async function (req, res) {
     .post('https://api.openweathermap.org/data/2.5/weather?q=' + req.body.cidade + '&appid=76bb83bd2478a0b030682c57b4cefda2&units=metric&lang=pt_br')
 
   if (climaResponse.body.weather.main == 'Rain') {
+    pokemon_tipo = "eletric"
   } else {
     if (climaResponse.body.main.temp < 5) {
       pokemon_tipo = "ice"
@@ -51,7 +52,7 @@ app.post('/search', async function (req, res) {
 
   pokemonsRes = await superagent.get('https://pokeapi.co/api/v2/type/' + pokemon_tipo);
 
-  res.redirect('/?cidade=' + req.body.cidade + '&pokemon=' + pokemonsRes.body.pokemon[3].pokemon.name + '&temperatura=' + climaResponse.body.main.temp + '&chuva=' + climaResponse.body.weather[0].description);
+  res.redirect('/?cidade=' + req.body.cidade + '&pokemon=' + pokemonsRes.body.pokemon[3].pokemon.name + '&pokemon_tipo=' + pokemon_tipo + '&temperatura=' + climaResponse.body.main.temp + '&chuva=' + climaResponse.body.weather[0].description);
 });
 
 app.listen(5000, function () {

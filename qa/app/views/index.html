@@ -70,7 +70,40 @@
       <script>
         pokemon = new URLSearchParams(window.location.search).get('pokemon')
         if (pokemon) {
-          document.getElementById('pokemon').innerHTML = 'Pokemon: <strong>' + pokemon + '</strong>'
+          document.getElementById('pokemon').innerHTML = 'Pokémon: <strong>' + pokemon + '</strong>'
+        }
+      </script>
+
+      <p id="pokemon-tipo"></p>
+      <script>
+        pokemon_tipo = new URLSearchParams(window.location.search).get('pokemon_tipo');
+        switch (pokemon_tipo) {
+          case 'eletric':
+            tipo = "eletrico";
+            break;
+          case 'water':
+            tipo = "água"
+            break;
+          case 'grass':
+            tipo = "Grama"
+            break;
+          case 'ground':
+            tipo = "terra"
+            break;
+          case 'bug':
+            tipo = "Inseto"
+            break;
+          case 'rock':
+            tipo = "pedra"
+            break;
+          case 'fire':
+            tipo = "Fogo"
+            break;
+          default:
+            tipo = "normal"
+        }
+        if (pokemon) {
+          document.getElementById('pokemon-tipo').innerHTML = 'Tipo Pokémon: <strong>' + tipo + '</strong>'
         }
       </script>
 
