@@ -59,8 +59,8 @@ $ docker run -ti -v $(pwd):/root -p 5000:5000 adtsysorquestrador/weather-pokemon
 
 Após isso basta acessar o endereço http://localhost:5000.
 
-> Importante
-> Os candidatos que fizerem o teste em um servidor local receberão um ponto extra. Ao acessar localmente você verá uma palavra após uma busca de cidade. Nos envie essa palavra chave junto ao restante do teste. Lembrando que isso é completamente opcional.
+### Importante
+> Os candidatos que fizerem o teste em um servidor local receberão um ponto extra. Ao acessar localmente você verá a palavra-chave após uma busca de cidade. Nos envie essa palavra chave junto ao restante do teste. Lembrando que isso é completamente opcional.
 
 ## Dicas
 
