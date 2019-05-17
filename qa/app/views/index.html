@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Pokémon Clima</title>
+    <style>
+      body {
+        background: #f1f1f1;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #666;
+      }
+
+      form {
+        background: white;
+        width: 400px;
+        padding: 40px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px #eee;
+        margin: 100px auto 100px;
+      }
+
+      label {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      #logo {
+        margin: 0 auto 20px;
+        width: 320px;
+      }
+
+      #city-input {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        color: #666;
+        padding: 8px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+        color: #666;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/search" method="POST" style="">
+      <div id="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokémon" width="320">
+      </div>
+
+      <label for="city-input">Insira uma <strong>cidade</strong> para visualizar um pokémon de acordo com o clima</label>
+      <input type="text" name="cidade" id="city-input" value="Campinas">
+      <script>
+        document.getElementById('city-input').value = new URLSearchParams(window.location.search).get('cidade')
+      </script>
+
+      <button>Buscar</button>
+
+      <p id="pokemon"></p>
+      <script>
+        pokemon = new URLSearchParams(window.location.search).get('pokemon')
+        if (pokemon) {
+          document.getElementById('pokemon').innerHTML = 'Pokemon: <strong>' + pokemon + '</strong>'
+        }
+      </script>
+
+      <p id="temperatura"></p>
+      <script>
+        temperatura = new URLSearchParams(window.location.search).get('temperatura')
+        if (pokemon) {
+          document.getElementById('temperatura').innerHTML = 'Temperatura: <strong>' + temperatura + ' ºC' + '</strong>'
+        }
+      </script>
+
+      <p id="clima"></p>
+      <script>
+        clima = new URLSearchParams(window.location.search).get('chuva')
+        if (pokemon) {
+          document.getElementById('clima').innerHTML = 'Clima: <strong>' + clima + '</strong>'
+        }
+      </script>
+    </form>
+  </body>
+</html>
