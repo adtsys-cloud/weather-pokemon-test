@@ -49,6 +49,19 @@
         padding: 6px 12px;
         cursor: pointer;
       }
+
+      #palavra-chave {
+        font-size: 12px;
+        background: #eee;
+        padding: 6px 12px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      pre {
+        display: inline;
+        margin-left: 8px;
+      }
     </style>
   </head>
 
@@ -58,10 +71,21 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokémon" width="320">
       </div>
 
-      <label for="city-input">Insira uma <strong>cidade</strong> para visualizar um pokémon de acordo com o clima</label>
-      <input type="text" name="cidade" id="city-input" value="Campinas">
+      <div id="palavra-chave"></div>
       <script>
-        document.getElementById('city-input').value = new URLSearchParams(window.location.search).get('cidade')
+        palavraChave = new URLSearchParams(window.location.search).get('palavra_chave');
+        element = document.getElementById('palavra-chave')
+        if (palavraChave) {
+          element.innerHTML = 'Palavra-chave:<pre>' + palavraChave +'</pre>'
+        } else {
+          element.parentNode.removeChild(element);
+        }
+      </script>
+
+      <label for="city-input">Insira uma <strong>cidade</strong> para visualizar um pokémon de acordo com o clima</label>
+      <input type="text" name="cidade" id="city-input">
+      <script>
+        document.getElementById('city-input').value = new URLSearchParams(window.location.search).get('cidade') || 'Campinas';
       </script>
 
       <button>Buscar</button>
@@ -119,7 +143,7 @@
       <script>
         clima = new URLSearchParams(window.location.search).get('chuva')
         if (pokemon) {
-          document.getElementById('clima').innerHTML = 'Clima: <strong>' + clima + '</strong>'
+          document.getElementById('clima').innerHTML = 'Clma: <strong>' + clima + '</strong>'
         }
       </script>
     </form>
