@@ -16,7 +16,7 @@
 Nosso cliente pediu para nossa empresa desenvolver a seguinte história:
 
 ```
-Eu, como aspirante de mestre pokemon, desejo ter um sistema composto de uma única página onde baseado na temperatura e condições climáticas de uma cidade seja mostrado um possível pokémon para o local.
+Eu, como aspirante a mestre pokemon, desejo ter um sistema composto de uma única página onde baseado na temperatura e condições climáticas de uma cidade seja mostrado um possível pokémon para o local.
 
 
 Critérios de aceite:
@@ -64,4 +64,4 @@ Após isso basta acessar o endereço http://localhost:5000.
 
 ## Dicas
 
-- Lembre-se que os desenvolvedores irão ter que resolver os bugs abertos.
+- Lembre-se que os desenvolvedores irão ter que resolver os bugs abertos. Seja o mais claro que puder nas descrições.
