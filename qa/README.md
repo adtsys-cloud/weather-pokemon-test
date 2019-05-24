@@ -13,15 +13,12 @@
 
 ## O Desafio
 
-Nosso cliente pediu para nossa empresa desenvolver a seguinte história:
-
-```
 Eu, como aspirante a mestre pokemon, desejo ter um sistema composto de uma única página onde, baseado na temperatura e condições climáticas de uma cidade, seja mostrado um possível pokémon para o local.
 
 
-Critérios de aceite:
+### Critérios de aceite:
 
-- Deve ser possível informar qualquer cidade do mundo;
+- Deve ser possível informar qualquer cidade suportada pela API [OpenWeatherMap](https://openweathermap.org/);
 - De acordo com as condições climáticas desta cidade, deve-se exibir um Pokémon baseado em seu tipo (fogo, água, vento, elétrico, etc) seguindo as seguintes regras:
   - Quando a temperatura for menor (<) que 5ºC, deve-se retornar um pokémon de gelo (ice).
   - Quando a temperatura estiver entre (>=) 5ºC e (<) 10ºC, deve-se retornar um pokémon do tipo água (water).
@@ -66,3 +63,4 @@ Os candidatos que fizerem o teste em um servidor local receberão um ponto extra
 ## Dicas
 
 - Lembre-se que os desenvolvedores irão ter que resolver os bugs abertos. Seja o mais claro que puder nas descrições.
+- Utilize [Interactive weather maps](https://openweathermap.org/weathermap) para visualizar com cidades e suas respectivas temperaturas
