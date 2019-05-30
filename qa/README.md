@@ -19,7 +19,7 @@ Eu, como aspirante a mestre pokemon, desejo ter um sistema composto de uma únic
 ### Critérios de aceite:
 
 - Deve ser possível informar qualquer cidade suportada pela API [OpenWeatherMap](https://openweathermap.org/);
-- De acordo com as condições climáticas desta cidade, deve-se exibir um Pokémon baseado em seu tipo (fogo, água, vento, elétrico, etc) seguindo as seguintes regras:
+- De acordo com as condições climáticas desta cidade, deve-se exibir um Pokémon baseado em seu tipo (fogo, água, elétrico, etc) seguindo as seguintes regras:
   - Quando a temperatura for menor que 5ºC, deve-se retornar um pokémon de gelo (ice).
   - Quando a temperatura for maior ou igual a 5ºC e menor que 10ºC, deve-se retornar um pokémon do tipo água (water).
   - Quando a temperatura estiver maior ou igual a 12ºC e menor que 15ºC, deve-se retornar um pokémon do tipo grama (grass).
