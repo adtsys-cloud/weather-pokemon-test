@@ -35,7 +35,6 @@ Eu, como aspirante a mestre pokemon, desejo ter um sistema composto de uma únic
   - Se está chovendo ou não;
   - Nome do Pokémon seguindo as regras acima;
   - Tipo do Pokémon seguindo as regras acima.
-```
 
 ### Necessidades
 
