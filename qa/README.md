@@ -20,12 +20,12 @@ Eu, como aspirante a mestre pokemon, desejo ter um sistema composto de uma únic
 
 - Deve ser possível informar qualquer cidade suportada pela API [OpenWeatherMap](https://openweathermap.org/);
 - De acordo com as condições climáticas desta cidade, deve-se exibir um Pokémon baseado em seu tipo (fogo, água, vento, elétrico, etc) seguindo as seguintes regras:
-  - Quando a temperatura for menor (<) que 5ºC, deve-se retornar um pokémon de gelo (ice).
-  - Quando a temperatura estiver entre (>=) 5ºC e (<) 10ºC, deve-se retornar um pokémon do tipo água (water).
-  - Quando a temperatura estiver entre 12ºC e 15ºC, deve-se retornar um pokémon do tipo grama (grass).
-  - Quando a temperatura estiver entre 15ºC e 21ºC, deve-se retornar um pokémon do tipo terra (ground).
-  - Quando a temperatura estiver entre 23ºC e 27ºC, deve-se retornar um pokémon do tipo inseto (bug).
-  - Quando a temperatura estiver entre 27ºC e 33ºC inclusive, deve-se retornar um pokémon do tipo pedra (rock).
+  - Quando a temperatura for menor que 5ºC, deve-se retornar um pokémon de gelo (ice).
+  - Quando a temperatura for maior ou igual a 5ºC e menor que 10ºC, deve-se retornar um pokémon do tipo água (water).
+  - Quando a temperatura estiver maior ou igual a 12ºC e menor que 15ºC, deve-se retornar um pokémon do tipo grama (grass).
+  - Quando a temperatura estiver maior ou igual a 15ºC e menor que 21ºC, deve-se retornar um pokémon do tipo terra (ground).
+  - Quando a temperatura estiver maior ou igual a 23ºC e menor que 27ºC, deve-se retornar um pokémon do tipo inseto (bug).
+  - Quando a temperatura estiver maior ou igual a 27ºC e menor ou igual a 33ºC, deve-se retornar um pokémon do tipo pedra (rock).
   - Quando a temperatura for maior que 33ºC, deve-se retornar um pokémon do tipo fogo (fire).
   - Para qualquer outra temperatura, deve-se retornar um pokémon do tipo normal.
   - E, caso esteja chovendo, deve-se retornar um pokémon do tipo elétrico (electric), independente da temperatura.
