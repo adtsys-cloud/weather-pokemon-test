@@ -49,8 +49,8 @@ Há duas formas para acessar a aplicação, a primeira é pelo endereço https:/
 Para subir a aplicação localmente, é necessário ter o docker instalado em uma máquina linux. Você pode instalar o Docker seguindo o guia [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/). Após isso, execute os seguintes comandos:
 
 ```
-$ docker pull adtsysorquestrador/weather-pokemon-test-node
-$ docker run -ti -v $(pwd):/root -p 5000:5000 adtsysorquestrador/weather-pokemon-test-node
+docker pull adtsysorquestrador/weather-pokemon-test-node
+docker run -ti -p 5000:5000 adtsysorquestrador/weather-pokemon-test-node
 ```
 
 Em seguida, basta acessar o endereço http://localhost:5000.
