@@ -4,7 +4,8 @@
 
 - O desafio a seguir é o dia-a-dia que qualquer desenvolvedor irá enfrentar no time de produtos da ADTSys;
 - Leia todo o conteúdo antes de iniciar e busque entender de fato o desafio proposto;
-- Utilize as tecnologias de sua preferência: linguagem de programação, frameworks, etc;
+- Dê preferência as seguintes linguagens: Node, Ruby ou Python.
+- Utilize os frameworks de sua preferência.
 - Não se trata de um desafio complexo, apesar da leitura ser extensa;
 - O desafio baseia-se em consumir 2 APIs de diferentes fontes de dados com intuito de agregar as informações e solucionar o problema de acordo com o que foi proposto;
 - Não completar o desafio não será critério para desclassificação, iremos analisar como a proposta do desafio foi elaborada e não somente o resultado;
@@ -192,4 +193,3 @@ A plataforma PokéAPI não exige token de autenticação o que torna sua utiliza
 > Fique atento as pegadinhas. 8ˆP
 
 > Para qualquer desenvolvedor independente de seu conhecimento técnico saber entender a documentação das ferramentas, plataformas, frameworks, etc, é um requisito básico, então sempre dê uma passadinha na área de documentação, mesmo que já tenha utilizado determinada ferramenta, as coisas sempre podem mudar e novas podem surgir.
-
