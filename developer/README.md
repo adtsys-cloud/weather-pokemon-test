@@ -4,7 +4,6 @@
 
 - O desafio a seguir é o dia-a-dia que qualquer desenvolvedor irá enfrentar no time de produtos da ADTSys;
 - Leia todo o conteúdo antes de iniciar e busque entender de fato o desafio proposto;
-- Dê preferência as seguintes linguagens: Node, Ruby ou Python.
 - Utilize os frameworks de sua preferência.
 - Não se trata de um desafio complexo, apesar da leitura ser extensa;
 - O desafio baseia-se em consumir 2 APIs de diferentes fontes de dados com intuito de agregar as informações e solucionar o problema de acordo com o que foi proposto;
