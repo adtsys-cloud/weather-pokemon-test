@@ -9,7 +9,7 @@
   2. Testar um sistema simples e abrir bugs;
 - Não completar o desafio não será critério para desclassificação, iremos analisar como a proposta do desafio foi elaborada e não somente o resultado;
 - Nos mande os resultados de seus testes da forma que você achar melhor, seja por e-mail, Google docs ou um sistema de sua preferência;
-- Quaisquer dúvidas fique a vontade para nos perguntar pelo e-mail team@cloudhit.io.
+- Quaisquer dúvidas fique a vontade para nos perguntar pelo e-mail team@enviabybus.com.br.
 
 ## O Desafio
 

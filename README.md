@@ -9,7 +9,7 @@
 - Não se trata de um desafio complexo, apesar da leitura ser extensa;
 - O desafio baseia-se em consumir 2 APIs de diferentes fontes de dados com intuito de agregar as informações e solucionar o problema de acordo com o que foi proposto;
 - Não completar o desafio não será critério para desclassificação, iremos analisar como a proposta do desafio foi elaborada e não somente o resultado;
-- Quaisquer dúvidas sobre o desafio ou dúvidas técnicas fique a vontade para nos perguntar pelo e-mail team@cloudhit.io.
+- Quaisquer dúvidas sobre o desafio ou dúvidas técnicas fique a vontade para nos perguntar pelo e-mail team@enviabybus.com.br.
 
 ## O Desafio
 
